@@ -1,0 +1,94 @@
+.button-container {
+  position: relative; /* Ensure absolute positioning of the "No" button */
+  text-align: center;
+   /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  height: 100px; /* Set the height to 100% of the viewport height */
+}
+
+.prompt-text {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  background-image: url('./img/background.jpeg');
+  background-size: cover;
+}
+
+/* Optional: Style for the "No" button when it moves */
+.button:hover {
+  background-color: #dc3545; /* Change background color on hover */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+  
+  @media (max-width: 600px) {
+    .button-container {
+      height: auto;
+    }
+  }
+  .carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    max-width: 500px;
+    max-height: 550px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .welcome-container {
+    text-align: center;
+    background-color: black;
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: 10px;
+    color : white
+  }
+  
+  .welcome-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color : white;
+  }
+  
+  .welcome-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+
+
+.para-container {
+  background-image: url('./img/background.jpeg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  padding: 20px; /* Add some padding for content */
+  text-align: center; /* Center align text */
+  color: white; /* Text color */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.para-image {
+  max-width: 100%; /* Ensure image fits within container */
+  margin-top: 20px; /* Add margin to separate from other content */
+}
