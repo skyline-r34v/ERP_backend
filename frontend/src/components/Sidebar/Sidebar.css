@@ -1,0 +1,27 @@
+.sidebar {
+  width: 220px;
+  background: #1e1e2f;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  background: #292943;
+}
+.sidebar-item.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
