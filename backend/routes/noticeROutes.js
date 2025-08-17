@@ -11,7 +11,7 @@ const controller = require('../controllers/noticeController');
 // DELETE /notices/:id      -> delete
 
 router.get('/', controller.getAllNotices);
-router.post('/', controller.createNotice);
+router.post('/create', controller.createNotice);
 router.get('/:id', controller.getNoticeById);
 router.put('/:id', controller.updateNotice);
 router.delete('/:id', controller.deleteNotice);
