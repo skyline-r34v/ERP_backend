@@ -2,7 +2,11 @@ const express = require('express')
 const dotenv = require('dotenv')
 const cors = require('cors')
 const connector = require('./utils/db')
+
 const noticeRoutes = require('./routes/noticeROutes')
+const deptRoutes = require('./routes/deptRoutes')
+const infraRoute = require('./routes/infraRoute')
+
 dotenv.config()
 
 const PORT = process.env.PORT
@@ -16,6 +20,8 @@ app.get('/', (req,res)=>{
 })
 
 app.use('/notices', noticeRoutes);
+app.use('/department', deptRoutes)
+app.use('/infrastructure', infraRoute)
 
 connector()
 
